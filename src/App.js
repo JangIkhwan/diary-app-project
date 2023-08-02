@@ -3,22 +3,6 @@ import { DiaryList } from "./components/DiaryList";
 import { DiaryListTemplate } from "./components/DiaryListTemplate";
 import { Navbar } from "./components/Navbar";
 
-const initData = []; 
-
-function generateData(){
-  for(let i = 0; i < 10; i++){
-    initData.push({
-      id : i,
-      date : "2023/07/01",
-      title: "제목" + i,
-      text : "여름이었다"
-    });
-  }
-  console.log(initData);
-};
-
-generateData();
-
 const App = ()=>{
   const [data, setData] = useState([
     {

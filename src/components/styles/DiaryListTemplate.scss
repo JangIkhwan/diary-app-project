@@ -3,23 +3,63 @@
     margin-top: 15vh;
     width: 600px;
     height: 85vh;
-    // border-radius: 20px 20px 0 0;
-    // background-color: #F2EAD3;
-}
-
-.title{
-    width: 100%;
-    height: 20%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
-    color: #0A6EBD;
-    font-size: 2rem;
+    // border-radius: 20px 20px 0 0;
+    //background-color: #F2EAD3;
+    .title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        color: #0A6EBD;
+        font-size: 2rem;
+    }
+    .insertBar{
+        height: 5rem;
+        width: 500px;
+        display: flex;
+        justify-content: right;
+       
+        font-weight: bold;
+        button{
+            width: 14rem;
+            height: 3rem;
+            border: none;
+            border-radius: 1.5rem;
+            background: #749BC2;
+            color: #f5f5f5;
+            font-size: 1.25rem;
+        }
+    }
+    .searchBar{
+        display: flex;
+        width: 500px;
+        margin-bottom: 10px;
+        input{
+            width: 90%;
+            // border: none;
+            padding: 5px;
+            flex: 1;
+        }
+        button{
+            width: 10%;
+            background: #749BC2;
+            color: #f5f5f5;
+            border: none;
+            &:hover{
+                cursor: pointer;
+                background: #78C1F3;
+            }
+        }
+    }
+    .content{
+        width: 100%;
+        height: 80%;
+        overflow-y: hidden;
+    }
 }
 
-.content{
-    width: 100%;
-    height: 80%;
-    overflow-y: hidden;
-}
